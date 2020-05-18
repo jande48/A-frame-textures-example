@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Adelle and Ryan are Getting Married!</title>
+    
+  </head>  
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="AdelleRyan1" src="https://cdn.glitch.com/419601b8-a12a-4640-a802-43cde98d7e3f%2FAdelle_Ryan_1.jpg?v=1589822211916">
+            <img id="brick" src="https://cdn.glitch.com/f8908e76-c6d1-4b09-932b-e43c1124b405%2Fdamaged_concrete_3.png?v=1589817998961">
+            <img id="AdelleRyan2" src="https://cdn.glitch.com/419601b8-a12a-4640-a802-43cde98d7e3f%2FIMG_0007.jpg?v=1589823664768">
+            <img id="AdelleRyan3" src="https://cdn.glitch.com/419601b8-a12a-4640-a802-43cde98d7e3f%2FIMG_0008%20(1).jpg?v=1589823672168">
+            <img id="HardwoodFloor" src="https://cdn.glitch.com/419601b8-a12a-4640-a802-43cde98d7e3f%2FTexturesCom_WoodFine0086_7_seamless_S.png?v=1589826776422">                                                                                                            </a-assets>
+        <!--
+        <a-image src="#AdelleRyan1"
+            position="0 1.5 -3"
+            width="2"
+            height="2"
+            scale="1 1 1">
+        </a-image>
+        -->
+      <!-- right image-->
+        <a-sky src="https://cdn.glitch.com/419601b8-a12a-4640-a802-43cde98d7e3f%2FSky%20Background5.jpg?v=1589828218052"
+               ></a-sky>
+        <a-plane material="color: #FFFFFF;
+                 src:#HardwoodFloor;
+                 repeat: 5000 5000;
+                 normal-map: #HardwoodFloor;
+                 normal-texture-repeat: 5000 5000"
+                 rotation="-90 0 0"
+                 scale="10000 10000 1"></a-plane>
+        <a-curvedimage src="#AdelleRyan1"
+                       theta-length="50"
+                       theta-start="90"
+                       radius="1"
+                       height="1.1"
+                       scale="1.5 1 1"
+                       position="0 1.5 0">
+        </a-curvedimage>
+      
+        <a-curvedimage src="#AdelleRyan2"
+                       theta-length="50"
+                       theta-start="155"
+                       radius="1"
+                       height="1.1"
+                       scale="1.5 1 1"
+                       position="0 1.5 0">
+        </a-curvedimage>
+      
+        <a-curvedimage src="#AdelleRyan3"
+                       theta-length="50"
+                       theta-start="220"
+                       radius="1"
+                       height="1.1"
+                       scale="1.5 1 1"
+                       position="0 1.5 0">
+        </a-curvedimage>
+      
+        <!--
+        <a-box color="#AA0000"
+               height="1.5"
+               position="-1 0.5 -4">
+        </a-box>
+        <a-entity geometry="primative: box;
+                  height: 1.5"
+                  material="color: #AA0000;
+                            shader: standard"
+                  position="1 0.5 -4">
+        </a-entity>
+      
+        <a-entity geometry="primative: cylinder;
+                            theta-length: 90;
+                            theta-start: 135;
+                            radius: 0.707;
+                            height: 0.833;
+                            open-ended: true"
+                  material="color: #FFFFFF;
+                            shader: flat;
+                            side: double"
+                  position="0 0.5 0"
+                  scale="-10 10 10">
+                  
+        </a-entity>
+        -->
+    </a-scene>
+  </body>
+</html>
