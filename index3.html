@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="tex" src="https://cdn.glitch.com/f8908e76-c6d1-4b09-932b-e43c1124b405%2Fdamaged_concrete_2.jpg?v=1589816979620">
+            <img id="brick" src="https://cdn.glitch.com/f8908e76-c6d1-4b09-932b-e43c1124b405%2Fdamaged_concrete_3.png?v=1589817998961">
+        </a-assets>
+        <a-box
+        src="#tex"
+        repeat="1 1"
+        normal-map="#tex"
+        normal-texture-repeat="1 1"
+        normal-scale="1 -1"
+        roughness="0.5"
+        width="4"
+        height="4"
+        depth="4"
+        position="-2 1.5 -9"
+        scale="-1 1 1">
+        </a-box>
+
+        <!-- box with 16:9 aspect ratio-->
+
+        <a-box
+        material="src:#brick';
+                  repeat: 2 2;
+                  normal-map: #brick;
+                  normal-texture-repeat: 1 1
+                  normal-scale: 1 -1;
+                  roughness: 0.5"
+        width="4"
+        height="4"
+        depth="4"
+        position="2 1.5 -9"
+        scale="-1 1 1">
+        </a-box>
+    </a-scene>
+  </body>
+</html>
